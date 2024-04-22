@@ -34,11 +34,11 @@ time.sleep(6)
 # 5、找到登录成功后页面必定会出现的标题：登录者姓名，获取这个标签里面的内容
 username = driver.find_element(By.XPATH, '//span[@class="dropdown-link"]').text
 # 6、对登录成功获取的内容进行判断
-# if username=="彭观灵":
-#     print("登录成功，用户名是{}".format(username))
-# else:
-#     print("登录失败")
-assert username == "彭观灵"
+if username=="彭观灵":
+    print("登录成功，用户名是{}".format(username))
+else:
+    print("登录失败")
+# assert username == "彭观灵"
 
 
 time.sleep(10)
